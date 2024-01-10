@@ -1,11 +1,12 @@
 import { useState } from 'react';
 
 const images = [
-  'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  'https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  'https://images.unsplash.com/photo-1482049016688-2d3e1b311543?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  'https://plus.unsplash.com/premium_photo-1676106623769-539ecc6d7f92?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  'https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  'https://www.graza.co/cdn/shop/files/graza-pdp-duo-header-3_2x_caa7f912-38b3-4e36-b928-ed6c036abfc7_720x.jpg?v=1698551972',
+  'https://www.graza.co/cdn/shop/products/graza-pdp-sizzle-header-3_2x_98f6ef49-281f-4095-b8bb-3045391401fe_720x.jpg?v=1698551972',
+  'https://www.graza.co/cdn/shop/products/graza-pdp-drizzle-header-3_2x_569477b7-acf0-4950-93a4-c263d6893aa4_720x.jpg?v=1698551972',
+  'https://www.graza.co/cdn/shop/products/graza-home-drizzle-in-use_2x_91b89a03-a404-434d-ae48-fb97e37406ab_720x.jpg?v=1698551972',
+  'https://www.graza.co/cdn/shop/products/graza-pdp-duo-header-2_2x_7673c33b-ecf4-43d9-b053-4261454c4f3c_720x.jpg?v=1698551972',
+  'https://www.graza.co/cdn/shop/products/graza-home-sizzle-in-usecopy_2x_47ab5af6-0732-4835-96ba-9853798e5b9d_720x.jpg?v=1698551972'
 ];
 
 
@@ -17,8 +18,8 @@ const Slideshow = () => {
   };
 
   return (
-    <div className='flex '>
-      <img src={images[currentImageIndex]} alt="" style={{ height:'100%', width: '100%',  backgroundSize: 'cover', backgroundPosition:'center' }}/>
+    <div className='flex flex-1'>
+      <img src={images[currentImageIndex]} alt="" className='imgg'/>
       <div className=' absolute bottom-0 mb-2 flex-col ' >
         {images.map((images, index) => (
           <div key={index} className=' m-4'>

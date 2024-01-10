@@ -45,7 +45,7 @@ function MainPage() {
 
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 h-[100%] ">
-        <div className="bg-black flex flex-1">
+        <div className="bg-black flex flex-1 h-[100vh]">
             <Slideshow/>
         </div>
         <div className=" bg-[#f6e6d9] flex flex-1">

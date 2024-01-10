@@ -8,6 +8,7 @@ body {
   display: flex;
   flex: 1;
   height: 100vh;
+  background:#f6e6d9;
 }
 
 #root {
@@ -280,7 +281,21 @@ svg #layer_1{
   -o-object-fit: cover;
   object-fit: cover
 }
-
+.imgg{
+  width: fit-content;
+  overflow: hidden;
+  width: 100%;
+  background-position: center center;
+  object-fit: cover;  
+  background-size: cover;
+}
+.stk{
+  
+  position: -webkit-sticky; /* Safari */
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
 
 @font-face {
   font-family: 'ITC';
