@@ -82,21 +82,21 @@ function MainPage() {
                             <p className="text-2xl font-[500]" style={{backgroundColor: isActive[1] ? '#9eef80':''}}> 2 </p>
                             <p className="text-xl font-[500]" style={{backgroundColor: isActive[1] ? '#9eef80':''}}> Sets </p>
                             <p className="text-[10px] text-center GTR" style={{backgroundColor: isActive[1] ? '#9eef80':''}}>  
-                            { subscription? <div><p> Free Shipping</p> <p> +14% Off</p></div> : <div><p> Free Shipping</p> <p> +7% Off</p></div>}
+                            { subscription? <div style={{backgroundColor: isActive[1] ? '#9eef80':''}}><p style={{backgroundColor: isActive[1] ? '#9eef80':''}}> Free Shipping</p> <p style={{backgroundColor: isActive[1] ? '#9eef80':''}}> +14% Off</p></div> : <div style={{backgroundColor: isActive[1] ? '#9eef80':''}}><p style={{backgroundColor: isActive[1] ? '#9eef80':''}}> Free Shipping</p> <p style={{backgroundColor: isActive[1] ? '#9eef80':''}}> +7% Off</p></div>}
                             </p>
                         </div>
                         <div onClick={()=>{handleClick(3)}} style={{backgroundColor: isActive[2] ? '#9eef80':''}} id="3" className="grid grid-rows-3 text-center justify-center items-center border-black border-2 rounded-xl w-1/2">
                             <p className="text-2xl font-[500]" style={{backgroundColor: isActive[2] ? '#9eef80':''}}> 3 </p>
                             <p className="text-xl font-[500]" style={{backgroundColor: isActive[2] ? '#9eef80':''}}> Sets </p>
                             <p className="text-[10px] text-center GTR " style={{backgroundColor: isActive[2] ? '#9eef80':''}}>
-                            { subscription? <div><p> Free Shipping</p> <p> +15% Off</p></div> : <div><p> Free Shipping</p> <p> +9% Off</p></div>} 
+                            { subscription? <div style={{backgroundColor: isActive[2] ? '#9eef80':''}}><p style={{backgroundColor: isActive[2] ? '#9eef80':''}}> Free Shipping</p> <p style={{backgroundColor: isActive[2] ? '#9eef80':''}}> +15% Off</p></div> : <div style={{backgroundColor: isActive[2] ? '#9eef80':''}}><p style={{backgroundColor: isActive[2] ? '#9eef80':''}}> Free Shipping</p> <p style={{backgroundColor: isActive[2] ? '#9eef80':''}}> +9% Off</p></div>} 
                             </p>
                         </div>
                         <div onClick={()=>{handleClick(4)}} style={{backgroundColor: isActive[3] ? '#9eef80':''}} id="4" className="grid grid-rows-3 text-center justify-center items-center border-black border-2 rounded-xl w-1/2">
                             <p className="text-2xl font-[500]" style={{backgroundColor: isActive[3] ? '#9eef80':''}}> 6 </p>
                             <p className="text-xl font-[500]" style={{backgroundColor: isActive[3] ? '#9eef80':''}}> Sets </p>
                             <p className="text-[10px] text-center GTR " style={{backgroundColor: isActive[3] ? '#9eef80':''}}>  
-                                { subscription? <div><p> Free Shipping</p> <p> +17% Off</p></div> : <div><p> Free Shipping</p> <p> +11% Off</p></div>}
+                                { subscription? <div style={{backgroundColor: isActive[3] ? '#9eef80':''}}><p style={{backgroundColor: isActive[3] ? '#9eef80':''}}> Free Shipping</p> <p style={{backgroundColor: isActive[3] ? '#9eef80':''}}> +17% Off</p></div> : <div style={{backgroundColor: isActive[3] ? '#9eef80':''}}><p style={{backgroundColor: isActive[3] ? '#9eef80':''}}> Free Shipping</p> <p style={{backgroundColor: isActive[3] ? '#9eef80':''}}> +11% Off</p></div>}
                             </p>
                         </div>
                     </div>
